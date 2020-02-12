@@ -4,20 +4,21 @@
         <meta charset="UTF-8">
         <script src='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js'></script>
         <link href='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css' rel='stylesheet' />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>My_map Page</title>
     </head>
 
     <body>
         <h1>Greatest_Maps</h1>
 
-        <div id='map' style='width: 400px; height: 300px;'></div>
+        <div id='map' style='width: 100%; height: 600px;'></div>
         <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiZmUtY2hhbiIsImEiOiJjazZqeWpjNGowMTlhM2VxcDYwcnIwdmo5In0.QuEm97JPsUX9RwWPfFCfOg';
         var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11'
+        style: 'mapbox://styles/fe-chan/ck6jyvm7k0p9g1iqsjqt413k2'
         });
         </script>
-        
+
     </body>
 </html>
