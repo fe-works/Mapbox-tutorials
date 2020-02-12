@@ -2,10 +2,22 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css' rel='stylesheet' />
         <title>My_map Page</title>
     </head>
 
     <body>
         <h1>Greatest_Maps</h1>
+
+        <div id='map' style='width: 400px; height: 300px;'></div>
+        <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZmUtY2hhbiIsImEiOiJjazZqeWpjNGowMTlhM2VxcDYwcnIwdmo5In0.QuEm97JPsUX9RwWPfFCfOg';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11'
+        });
+        </script>
+        
     </body>
 </html>
