@@ -16,8 +16,22 @@
         mapboxgl.accessToken = 'pk.eyJ1IjoiZmUtY2hhbiIsImEiOiJjazZqeWpjNGowMTlhM2VxcDYwcnIwdmo5In0.QuEm97JPsUX9RwWPfFCfOg';
         var map = new mapboxgl.Map({
         container: 'map',
+        center: [139.646,35.626],
+        zoom: 12,
         style: 'mapbox://styles/fe-chan/ck6jyvm7k0p9g1iqsjqt413k2'
         });
+        
+        // Navigation Control
+        map.addControl(
+            new mapboxgl.NavigationControl(), 'top-left'
+        );
+        // Geolocation Control
+        map.addControl(new mapboxgl.GeolocateControl({
+        positionOptions: {
+            enableHighAccuracy: true
+        },
+        trackUserLocation: true
+        }));
         </script>
 
     </body>
